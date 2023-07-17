@@ -1,0 +1,328 @@
+  .main-banner {
+    background: #F5F5F5;
+  }
+  
+  .main-banner__content {
+    display: grid;
+    grid-template-columns: auto 540px;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .main-banner__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
+  
+  .main-banner__h1 {
+    font: normal 700 34px/120% "Fira Sans";
+    color: #102938;
+  }
+  
+  .main-banner__button {
+    font: normal 600 16px/125% "Fira Sans";
+    display: flex;
+    gap: 8px;
+    height: 48px;
+    padding: 11px 14px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid #102938;
+    background: rgba(245, 245, 245, 0);
+    color: #102938;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .main-banner__button:hover {
+    background: #102938;
+    color: #F5F5F5;
+  }
+  
+  .main-banner__button:hover .main-banner__button-icon path {
+    stroke: #F5F5F5;
+  }
+  
+  .main-banner__button-icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .main-banner__button-icon path {
+    stroke: #102938;
+    transition: stroke 0.3s ease, color 0.3s ease;
+  }
+  
+  .banner-gallery {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .banner-gallery__slider {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .banner-gallery__slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .banner-gallery__slide::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+    pointer-events: none;
+  }
+  
+  .banner-gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner-gallery__content {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 30px 30px 53px;
+    pointer-events: none;
+  }
+  
+  .banner-gallery__price {
+    font: normal 600 14px/130% "Fira Sans";
+    background: #FFFFFF;
+    display: inline-block;
+    border-radius: 32px;
+    padding: 3px 10px;
+    color: #102938;
+  }
+  
+  .banner-gallery__title {
+    font: normal 700 24px/normal "Fira Sans";
+    color: #FFF;
+    width: calc(100% - 68px);
+  }
+  
+  .banner-gallery__elems {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+    padding: 0 30px 30px 30px;
+  }
+  
+  .banner-gallery__wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+  }
+  
+  .banner-gallery__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    pointer-events: auto;
+  }
+  
+  .banner-gallery__btn.swiper-button {
+    width: 24px !important;
+    height: 24px !important;
+    border: none !important;
+    cursor: pointer;
+  }
+  
+  .banner-gallery__btn.swiper-button::before {
+    display: none !important;
+  }
+  
+  .banner-gallery__btn.swiper-button-disabled > svg {
+    opacity: 0.6;
+  }
+  
+  .banner-gallery__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    pointer-events: auto;
+  }
+  
+  .banner-gallery__pagination .swiper-pagination-bullet {
+    flex: 1 0 0;
+    align-self: stretch;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+    margin: 0 !important;
+    overflow: hidden;
+    opacity: 0.5 !important;
+  }
+  
+  .banner-gallery__pagination .swiper-pagination-bullet-active {
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    opacity: 1 !important;
+  }
+  
+  @media (max-width: 1279px) {  
+    .main-banner__h1 {
+      font-size: 26px;
+      line-height: normal;
+      letter-spacing: 0.26px;
+    }
+  
+    .main-banner__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 20px;
+    }
+  
+    .banner-gallery {
+      height: 280px;
+    }
+  
+    .banner-gallery__title {
+      font-size: 22px;
+      line-height: 120%;
+    }
+  
+    .banner-gallery__content {
+      padding: 20px 20px 33px;
+    }
+  
+    .banner-gallery__elems {
+      gap: 15px;
+      padding: 0 20px 20px 20px;
+    }
+  }
+  
+  @media (max-width: 1023px) { 
+    .main-banner__h1 {
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: auto;
+    }
+  
+    .main-banner__button {
+      font-size: 14px;
+    }
+  
+    .banner-gallery {
+      height: 220px;
+    }
+  
+    .banner-gallery__title {
+      font-size: 20px;
+      line-height: 125%;
+      letter-spacing: 0.2px;
+    }
+  
+    .banner-gallery__content {
+      padding: 15px 15px 28px;
+    }
+  
+    .banner-gallery__elems {
+      padding: 0 15px 15px 15px;
+    }
+  
+    .banner-gallery__wrap {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) { 
+    .main-banner {
+      background: #FFFFFF;
+    }
+  
+    .main-banner__content {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  
+    .main-banner__wrapper {
+      grid-column: 1/1;
+      grid-row: 2/3;
+      gap: 30px;
+    }
+  
+    .main-banner__h1 {
+      font-size: 22px;
+      line-height: 115%;
+    }
+  
+    .main-banner__button {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .main-banner__gallery {
+      grid-column: 1/1;
+      grid-row: 1/1;
+    }
+  
+    .banner-gallery {
+      height: 390px;
+    }
+  
+    .banner-gallery__price {
+      font-size: 12px;
+    }
+  
+    .banner-gallery__title {
+      font-size: 18px;
+      line-height: 115%;
+      letter-spacing: auto;
+      width: 100%;
+    }
+  
+    .banner-gallery__content {
+      padding: 20px 20px 33px;
+    }
+  
+    .banner-gallery__elems {
+      padding: 0 20px 20px 20px;
+    }
+  
+    .banner-gallery__navigation {
+      display: none;
+    }
+  }
