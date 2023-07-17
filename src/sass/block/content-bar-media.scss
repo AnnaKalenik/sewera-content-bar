@@ -128,8 +128,30 @@
                 height: calc(145px - 20px);
             }
 
-            &_4 {             
-                margin-top: 0; 
+            &_1 {
+                background-size: calc((1vh + 1vw) * 18);    
+            }
+    
+            &_2 {
+                background-size: calc((1vh + 1vw) * 12);    
+            }
+    
+            &_3 {           
+                background-size: calc((1vh + 1vw) * 12);    
+            }
+    
+            &_4 {            
+                background-size: calc((1vh + 1vw) * 22);    
+   
+                margin-top: 0;  
+            }
+    
+            &_5 {            
+                background-size: calc((1vh + 1vw) * 10);    
+            }
+    
+            &_6 {
+                background-size: calc((1vh + 1vw) * 12);    
             }
         }
 
@@ -148,6 +170,10 @@
 
 @media (max-width: 429px) {
     .content-bar {
-         
+        &__wrap {   
+            &_4 {            
+                background-size: calc((1vh + 1vw) * 18);    
+            }
+        }
     }
 }
