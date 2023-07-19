@@ -32,7 +32,7 @@
             height: 0;
             transform: translate(0, -50%) scaleY(0);
             pointer-events: none;
-            transition: 0.3s ease height, 0.3s ease transform;
+            transition: 0.5s ease height, 0.5s ease transform;
         }
 
         &_hidden.active {
