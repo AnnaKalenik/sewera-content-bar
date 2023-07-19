@@ -30,14 +30,14 @@
 
         &_hidden {
             height: 0;
-            transform: translate(0, -50%) scaleY(0);
+            transform: translate(0, -50%) scale(1, 0);
             pointer-events: none;
             transition: 0.5s ease height, 0.5s ease transform;
         }
 
         &_hidden.active {
             height: fit-content;
-            transform: translate(0, 0) scaleY(1);
+            transform: translate(0, 0) scale(1);
             pointer-events: auto;
         }
     }
