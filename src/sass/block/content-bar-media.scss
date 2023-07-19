@@ -34,7 +34,31 @@
         }
 
         &__link {
-            padding: 25px 30px 20px;
+            padding: 20px;
+
+            &_1 {
+                background-position: bottom right -45px;
+            } 
+            
+            &_4 {            
+                background-position: bottom right -45px;
+            }
+
+            &_5 {            
+                background-position: bottom -18px right;
+            }
+
+            &_6 {            
+                background-position: bottom -10px right;
+            }
+
+            &_7 {            
+                background-position: bottom right -45px;
+            }
+
+            &_10 {            
+                background-position: top right -15px;
+            }
         }
 
         &__title {
@@ -46,8 +70,12 @@
                 font-size: 18px;
                 line-height: 130%;
                 letter-spacing: 0.18px;
-                padding-bottom: 15px;
+                padding-bottom: 8px;
             }
+        }
+
+        &__button {
+            margin-top: 60px; 
         }
     }
 }
@@ -84,6 +112,23 @@
 
         &__link {
             padding: 15px 10px;
+            background-size: contain;
+
+            &_1 {
+                background-position: bottom right -25px;
+            } 
+            
+            &_4 {            
+                background-position: bottom right -25px;
+            }
+
+            &_7 {            
+                background-position: bottom right -15px;
+            }
+
+            &_10 {            
+                background-position: top right -5px;
+            }
         }
 
         &__title {
@@ -141,6 +186,7 @@
         &__button {
             min-width: 216px;
             font-size: 14px;
+            margin-top: 27px; 
         }
     }
 }
@@ -216,51 +262,19 @@
             padding: 10px;
 
             &_1 {
-                background-size: calc((1vh + 1vw) * 18);    
-            }
-    
-            &_2 {
-                background-size: calc((1vh + 1vw) * 12);    
-            }
-    
-            &_3 {           
-                background-size: calc((1vh + 1vw) * 12);    
-            }
-    
-            &_4 {            
-                background-size: calc((1vh + 1vw) * 22);    
-            }
-    
-            &_5 {            
-                background-size: calc((1vh + 1vw) * 10);    
-            }
-    
-            &_6 {
-                background-size: calc((1vh + 1vw) * 12);    
+                background-position: bottom right 0px;
             }
 
-            &_7 {
-                background-size: calc((1vh + 1vw) * 18);    
+            &_4 {            
+                background-position: bottom 0px right 0px;
             }
-    
-            &_8 {
-                background-size: calc((1vh + 1vw) * 12);    
+
+            &_7 {     
+                background-position: bottom right 0px;
             }
-    
-            &_9 {           
-                background-size: calc((1vh + 1vw) * 12);    
-            }
-    
-            &_10 {            
-                background-size: calc((1vh + 1vw) * 22);    
-            }
-    
-            &_11 {            
-                background-size: calc((1vh + 1vw) * 10);    
-            }
-    
-            &_12 {
-                background-size: calc((1vh + 1vw) * 12);    
+
+            &_10 {     
+                background-position: top 0 right 0px;
             }
         }
 
@@ -288,11 +302,58 @@
         &__desctiption-bottom {
             gap: 4px;
         }
+
+        &__button {
+            margin-top: -20px; 
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .content-bar {
+        &__link {
+            &_1 {
+                background-size: 80% auto;
+            } 
+
+            &_3 {
+                background-size: 90% auto;
+                background-position: bottom right;
+            }
+            
+            &_4 {            
+                background-size: 75% auto;
+                background-position: bottom -5px right 0px;
+            }
+
+            &_5 {        
+                background-size: 90% auto;         
+                background-position: bottom -10px right;
+            }
+
+            &_6 {       
+                background-size: 85% auto;     
+                background-position: bottom 0px right;
+            }
+
+            &_7 {     
+                background-size: 78% auto;       
+            }
+
+            &_10 {     
+                background-size: 80% auto;              
+                background-position: top -5px right 0px;
+            }
+        }
     }
 }
 
 @media (max-width: 429px) {
     .content-bar {
+        &__h2 {
+            margin-bottom: 20px;
+        }
+
         &__content {
             gap: 15px;
         }
@@ -301,14 +362,67 @@
             gap: 15px;
         }
 
-        &__link {   
-            &_4 {            
-                background-size: calc((1vh + 1vw) * 18);    
-            }
-        }
-
         &__button {
             min-width: 100%;
+            margin-top: -15px; 
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    .content-bar {
+        &__link {
+            &_1 {
+                background-size: 90% auto;
+                background-position: bottom right -20px;
+            } 
+
+            &_2 {
+                background-size: 120% auto;
+            }
+
+            &_3 {
+                background-size: 110% auto;
+            }
+            
+            &_4 {            
+                background-size: 105% auto;
+                background-position: bottom 0px right -55px;
+            }
+
+            &_5 {        
+                background-size: 110% auto;         
+            }
+
+            &_6 {       
+                background-size: 112% auto;     
+                background-position: bottom -10px right;
+            }
+
+            &_7 {     
+                background-size: 90% auto;       
+                background-position: bottom right -5px;
+            }
+            
+            &_8 {     
+                background-size: 110% auto;       
+                background-position: bottom right 0px;
+            }
+
+            &_10 {     
+                background-size: 90% auto;              
+                background-position: top -5px right 0px;
+            }
+
+            &_11 {     
+                background-size: 118% auto;              
+                background-position: bottom 7px right -15px;
+            }
+
+            &_12 {     
+                background-size: 110% auto;              
+                background-position: bottom 5px right;
+            }
         }
     }
 }
